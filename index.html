@@ -1,0 +1,68 @@
+<!-- In your HTML, create an article element that will serve as your main representative component. Give the element a unique identifier.
+In this component, create a sub-component for basic information using the section element. In this section create elements for the representative's image, name, district info, and political affiliation.
+Beneath the basic information, you will create a sub-component, using a section element, to list any committees the candidate is serving on.
+The last component will hold links to any legislation that your representative has enacted.
+Make sure you use good BEM-style class names for each element in your components. Put a comment above each component explaining what it is. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=<device-width>, initial-scale=1.0"> -->
+    <link rel ="stylesheet" href = "styles/main.css"></link>
+      <!-- Montserrat font -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <!-- Alfa slab 1  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>Jim Cooper</title>
+</head>
+<body>
+    <!-- This is the main content of my page -->
+    <article class="jim_cooper">
+        <section class="info">
+            <!-- This is my title. it is h1 because it is the main title -->
+            <h1> Jim Cooper </h1>
+            <!-- This is an image with a description.-->
+            <img src="https://www.govtrack.us/static/legislator-photos/400081-200px.jpeg" alt = "Jim Cooper"/>  
+            <!-- I put this information in paragraphs. I debated on making it an unordered list but two unordered lists seemed weird to me -->
+             <p class="info_district"><strong>Congressional District:</strong> Tennessee's 5th </p>
+            <p class="info_affiliation"><strong>Political Affiliation:</strong> Democrat</p>
+        </section>
+        <aside>
+        <!-- New section!!!! -->
+            <section>
+            <!-- This is a header for this section. it is h2 because it is less important than the main header -->
+             <h2>Committees</h2>
+                <!-- This is an unordered list of committees -->
+                 <ul class="committees">
+                        <li class="committee">House Committee on Armed Services</li>
+                        <li class="committee">House Committee on the Budget</li>
+                        <li class="committee">House Committee on Oversight and Reform</li>
+                    </ul>
+            </section>
+            <section class="legislation">
+                <h2>Legislation</h2>
+                <ul class="legislation">
+                    <li><a href="https://www.govtrack.us/congress/bills/112/hr482">H.R. 482 (112th): Water Heater Rating Improvement Act of 2011</a></li>
+                    <li><a href="https://www.govtrack.us/congress/bills/110/hr928">H.R. 928 (110th): Inspector General Reform Act of 2008 </a></li>
+                    <li><a href="https://www.govtrack.us/congress/bills/103/hjres297">H.J.Res. 297 (103rd): To designate 1994 as “The Year of Gospel Music”. </a></li>
+                    <li><a href="https://www.govtrack.us/congress/bills/101/hr5667">H.R. 5667 (101st): To amend the Water Resources Development Act of 1974</a></li>
+                    <li><a href="https://www.govtrack.us/congress/bills/117/s1283">H.R. 971 (101st): Telephone Operator Consumer Services Improvement Act of 1990</a></li>
+                 <li><a href="https://www.govtrack.us/congress/bills/101/hr971">Tax on Wallstreet Speculation Act </a></li>
+                </ul>    
+            </section>
+    </aside>
+    </article>
+    <footer>
+        <div class="social_media">
+            <a href="https://twitter.com/repjimcooper"><img class="social" src="images/twitter.png" alt="twitter logo"/></a>
+            <a href="https://www.facebook.com/JimCooper"> <img class="social" src="images/facebook.png" alt="facebook logo"/></a>
+            <a href="https://www.instagram.com/repjimcooper/#"><img class="social" src="images/instagram.png" alt="instagram icon"/></a> 
+        </div> 
+    </footer>
+</body>
+</html>
