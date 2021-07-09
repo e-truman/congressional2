@@ -5,12 +5,16 @@ body {
 }
 
 h1 {
-    font-size: 300%; 
+    font-size: 500%; 
     font-family: 'Alfa Slab One', cursive; 
+    background: -webkit-linear-gradient(#eee, rgb(65, 121, 206));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2%;
   }
 
 img {
-    width: 100%;
+    width: 80%;
 }
 .jim_cooper {
     display: flex;
@@ -28,16 +32,22 @@ aside {
 }
 
 .social_media {
+    margin: 2%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: flex-end;
     
 }
 
-footer {
-    /* margin: 0% 10% 2% 10%; */
+header {
+    margin: 2% 0% 2% 0%;
+    justify-content: right;
     flex-basis: auto;
 }
 .social {
     width: 2em;
     
+}
+
+img {
+    margin: 2%;
 }
