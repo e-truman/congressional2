@@ -1,5 +1,5 @@
 body {
-    background-color: white; 
+    background-color: rgb(207, 229, 238); 
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
@@ -7,19 +7,20 @@ body {
 h1 {
     font-size: 500%; 
     font-family: 'Alfa Slab One', cursive; 
-    background: -webkit-linear-gradient(#eee, rgb(65, 121, 206));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 2%;
+    background: -webkit-linear-gradient(rgb(23, 18, 90), rgb(65, 121, 206));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 2%;
   }
 
 img {
     width: 80%;
+    /* text-align: center; */
 }
 .jim_cooper {
     display: flex;
     justify-content: space-around;
-    margin: 5%;
+    margin: 0%;
     align-items: center;
 }
 
@@ -31,23 +32,38 @@ aside {
     height: 75%;
 }
 
-.social_media {
-    margin: 2%;
+.caption {
+    width: 80%;
+}
+
+nav {
+    background-color: white;
     display: flex;
     justify-content: flex-end;
+    padding: 1%;
     
 }
 
 header {
-    margin: 2% 0% 2% 0%;
-    justify-content: right;
-    flex-basis: auto;
+    /* margin: 2% 0% 2% 0%; */
+    /* justify-content: right; */
+    /* flex-basis: auto; */
 }
 .social {
     width: 2em;
-    
+    margin 2%;  
 }
 
-img {
-    margin: 2%;
-}
+
+.banner {
+    width: 100%;
+   height: 200px;
+   margin: 0;
+   object-fit: cover;
+   opacity:40%;
+   margin: 0;
+ }
+
+ .centered {
+    color: #303030;
+    transform: translate(0, -200%);

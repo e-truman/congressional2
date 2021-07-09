@@ -21,23 +21,39 @@ Make sure you use good BEM-style class names for each element in your components
     <title>Jim Cooper</title>
 </head>
 <body>
+
     <header>
-        <div class="social_media">
-            <a href="https://twitter.com/repjimcooper"><img class="social" src="images/twitter.png" alt="twitter logo"/></a>
-            <a href="https://www.facebook.com/JimCooper"> <img class="social" src="images/facebook.png" alt="facebook logo"/></a>
-            <a href="https://www.instagram.com/repjimcooper/#"><img class="social" src="images/instagram.png" alt="instagram icon"/></a> 
-        </div> 
+        <nav class="social_media">
+            <div class ="social">
+                <a href="https://twitter.com/repjimcooper"><img class="social" src="images/twitter.png" alt="twitter logo"/></a>
+            </div>
+            <div class ="social">
+                <a href="https://www.facebook.com/JimCooper"> <img class="social" src="images/facebook.png" alt="facebook logo"/></a>
+            </div>
+                <div class ="social"><a href="https://www.instagram.com/repjimcooper/#"><img class="social" src="images/instagram.png" alt="instagram icon"/></a>
+            </div>
+        </nav> 
     </header>
+
+
+    <div class= "image-and-text">
+        <img class="banner" src="images/banner.jpeg" alt="skyline banner" />>
+    
+         <div class="centered">
+           <h1> Jim Cooper </h1>
+         </div>
+
     <!-- This is the main content of my page -->
     <article class="jim_cooper">
         <section class="info">
             <!-- This is my title. it is h1 because it is the main title -->
-            <h1> Jim Cooper </h1>
             <!-- This is an image with a description.-->
             <img src="https://www.govtrack.us/static/legislator-photos/400081-200px.jpeg" alt = "Jim Cooper"/>  
             <!-- I put this information in paragraphs. I debated on making it an unordered list but two unordered lists seemed weird to me -->
-             <p class="info_district"><strong>CONGRESSIONAL DISTRICT:</strong> Tennessee's 5th </p>
-            <p class="info_affiliation"><strong>POLITICAL AFFILIATION:</strong> Democrat</p>
+            <div class="caption">
+                <p class="info_district"><strong>CONGRESSIONAL DISTRICT:</strong> Tennessee's 5th </p>
+                <p class="info_affiliation"><strong>POLITICAL AFFILIATION:</strong> Democrat</p>
+            </div>  
         </section>
         <aside>
         <!-- New section!!!! -->
