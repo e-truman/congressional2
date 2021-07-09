@@ -10,18 +10,18 @@ h1 {
     background: -webkit-linear-gradient(rgb(23, 18, 90), rgb(65, 121, 206));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 2%;
+    margin: 3% 2% 2% 2%;
   }
 
 img {
-    width: 80%;
-    /* text-align: center; */
+    width: 60%;
+
 }
 .jim_cooper {
     display: flex;
     justify-content: space-around;
-    margin: 0%;
-    align-items: center;
+    margin: -10% 10% 20% 10%;
+    /* align-items: center; */
 }
 
 aside {
@@ -40,18 +40,17 @@ nav {
     background-color: white;
     display: flex;
     justify-content: flex-end;
-    padding: 1%;
+    padding: .5%;
+    float: inline-start;
     
 }
 
 header {
-    /* margin: 2% 0% 2% 0%; */
-    /* justify-content: right; */
-    /* flex-basis: auto; */
+    margin: 0;
 }
 .social {
     width: 2em;
-    margin 2%;  
+    margin: 2%; 
 }
 
 
@@ -61,9 +60,8 @@ header {
    margin: 0;
    object-fit: cover;
    opacity:40%;
-   margin: 0;
  }
 
  .centered {
-    color: #303030;
-    transform: translate(0, -200%);
+    /* color: #303030; */
+    transform: translate(0, -175%);
